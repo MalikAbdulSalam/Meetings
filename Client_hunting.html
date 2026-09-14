@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Software House Client Acquisition Strategy</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f8;
+        color: #1f2937;
+        line-height: 1.65;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 20px 70px;
+    }
+
+    header {
+        background: linear-gradient(135deg, #111827, #2563eb);
+        color: white;
+        padding: 60px 40px;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+
+    .badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.15);
+        padding: 7px 15px;
+        border-radius: 30px;
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    header p {
+        max-width: 850px;
+        color: #e5e7eb;
+        font-size: 19px;
+    }
+
+    section {
+        background: white;
+        padding: 32px;
+        border-radius: 16px;
+        margin-bottom: 25px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+        font-size: 28px;
+        color: #111827;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        color: #1d4ed8;
+        font-size: 20px;
+        margin: 20px 0 10px;
+    }
+
+    p {
+        margin-bottom: 13px;
+    }
+
+    ul, ol {
+        margin-left: 24px;
+        margin-bottom: 15px;
+    }
+
+    li {
+        margin-bottom: 8px;
+    }
+
+    .highlight {
+        background: #eff6ff;
+        border-left: 5px solid #2563eb;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .success {
+        background: #f0fdf4;
+        border-left: 5px solid #16a34a;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .warning {
+        background: #fff7ed;
+        border-left: 5px solid #f97316;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .card {
+        border: 1px solid #e5e7eb;
+        padding: 22px;
+        border-radius: 12px;
+        background: #fafafa;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .flow {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin: 25px 0;
+    }
+
+    .flow-box {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 8px;
+        padding: 12px 18px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .arrow {
+        font-size: 22px;
+        color: #6b7280;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 13px 15px;
+        border-bottom: 1px solid #e5e7eb;
+        text-align: left;
+    }
+
+    th {
+        background: #f3f4f6;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .priority {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2563eb;
+    }
+
+    .timeline {
+        border-left: 4px solid #2563eb;
+        padding-left: 25px;
+        margin-left: 8px;
+    }
+
+    .timeline-item {
+        margin-bottom: 30px;
+        position: relative;
+    }
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #2563eb;
+        left: -34px;
+        top: 7px;
+    }
+
+    .timeline-item h3 {
+        margin-top: 0;
+    }
+
+    .checklist {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .checklist li {
+        padding: 9px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .checklist li::before {
+        content: "☐";
+        margin-right: 10px;
+        color: #2563eb;
+        font-weight: bold;
+    }
+
+    .metric {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+    }
+
+    .metric-number {
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        color: #2563eb;
+        margin-bottom: 5px;
+    }
+
+    footer {
+        text-align: center;
+        color: #6b7280;
+        padding: 30px 10px;
+    }
+
+    @media (max-width: 700px) {
+        header {
+            padding: 40px 25px;
+        }
+
+        header h1 {
+            font-size: 31px;
+        }
+
+        section {
+            padding: 22px;
+        }
+
+        table {
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 9px;
+        }
+    }
+
+    @media print {
+        body {
+            background: white;
+        }
+
+        section, header {
+            box-shadow: none;
+            break-inside: avoid;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<!-- HEADER -->
+
+<header>
+    <div class="badge">InjectAI Nexus — Business Development</div>
+
+    <h1>Software House Client Acquisition Strategy</h1>
+
+    <p>
+        A practical system for acquiring clients through freelance platforms,
+        LinkedIn, direct B2B outreach, partnerships, referrals and technical
+        demonstrations.
+    </p>
+</header>
+
+
+<!-- CORE STRATEGY -->
+
+<section>
+
+    <h2>1. Core Client Acquisition Strategy</h2>
+
+    <p>
+        Do not depend on one platform. Build multiple client acquisition channels
+        and gradually move from freelance platforms toward direct business clients.
+    </p>
+
+    <div class="flow">
+
+        <div class="flow-box">Freelancer</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Upwork</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">LinkedIn</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Direct B2B</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Partnerships</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Referrals</div>
+
+    </div>
+
+    <div class="success">
+        <strong>Long-term goal:</strong>
+        Reduce dependence on freelance platforms and increase direct clients,
+        recurring contracts and referrals.
+    </div>
+
+</section>
+
+
+<!-- FREELANCE PLATFORMS -->
+
+<section>
+
+    <h2>2. Freelance Platforms</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Freelancer.com</h3>
+
+            <p class="priority">High Priority</p>
+
+            <ul>
+                <li>Submit highly relevant proposals.</li>
+                <li>Focus on AI and Computer Vision.</li>
+                <li>Target higher-value projects.</li>
+                <li>Use your existing profile and reviews.</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+
+            <h3>Upwork</h3>
+
+            <p class="priority">High Priority</p>
+
+            <ul>
+                <li>Use Connects strategically.</li>
+                <li>Target specialized projects.</li>
+                <li>Avoid generic proposals.</li>
+                <li>Build long-term clients.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Fiverr</h3>
+
+            <p class="priority">Medium Priority</p>
+
+            <ul>
+                <li>Create specialized gigs.</li>
+                <li>Use demo videos.</li>
+                <li>Create clear packages.</li>
+                <li>Build reviews.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>PeoplePerHour</h3>
+
+            <p class="priority">Secondary</p>
+
+            <ul>
+                <li>Use as an additional channel.</li>
+                <li>Measure lead quality.</li>
+                <li>Do not overspend.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Guru</h3>
+
+            <p class="priority">Secondary</p>
+
+            <ul>
+                <li>Use as another lead source.</li>
+                <li>Focus on relevant projects.</li>
+                <li>Keep spending low.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- TARGET PROJECTS -->
+
+<section>
+
+    <h2>3. Projects to Target</h2>
+
+    <p>
+        Do not bid on every software project. Concentrate on problems that
+        match the company's strongest technical capabilities.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Computer Vision</h3>
+
+            <ul>
+                <li>YOLO</li>
+                <li>Object detection</li>
+                <li>Segmentation</li>
+                <li>Tracking</li>
+                <li>OCR</li>
+                <li>Video analytics</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>Generative AI</h3>
+
+            <ul>
+                <li>RAG</li>
+                <li>LLM applications</li>
+                <li>AI agents</li>
+                <li>AI chatbots</li>
+                <li>Document AI</li>
+                <li>Voice AI</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>Robotics</h3>
+
+            <ul>
+                <li>ROS2</li>
+                <li>Gazebo</li>
+                <li>Robot vision</li>
+                <li>Navigation</li>
+                <li>Simulation</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>Drone AI</h3>
+
+            <ul>
+                <li>PX4</li>
+                <li>ArduPilot</li>
+                <li>MAVLink</li>
+                <li>Object tracking</li>
+                <li>Edge AI</li>
+            </ul>
+        </div>
+
+
+        <div class="card">
+            <h3>Automation</h3>
+
+            <ul>
+                <li>n8n</li>
+                <li>API automation</li>
+                <li>CRM automation</li>
+                <li>Email automation</li>
+                <li>AI workflows</li>
+            </ul>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FIVERR -->
+
+<section>
+
+    <h2>4. Fiverr Strategy</h2>
+
+    <p>
+        Do not create a generic "I will develop software" gig.
+        Create highly specialized services.
+    </p>
+
+    <h3>Recommended Gigs</h3>
+
+    <ol>
+        <li>I will build YOLO object detection and Computer Vision software.</li>
+        <li>I will build an AI RAG chatbot for your documents.</li>
+        <li>I will develop ROS2 Gazebo robotics simulation.</li>
+        <li>I will build real-time AI video analytics.</li>
+        <li>I will automate business workflows using AI and n8n.</li>
+    </ol>
+
+    <h3>Every Gig Should Include</h3>
+
+    <ul>
+        <li>Professional thumbnail</li>
+        <li>Short demo video</li>
+        <li>Clear deliverables</li>
+        <li>Three pricing packages</li>
+        <li>FAQ</li>
+        <li>Portfolio examples</li>
+    </ul>
+
+</section>
+
+
+<!-- DIRECT B2B -->
+
+<section>
+
+    <h2>5. Direct B2B Client Acquisition</h2>
+
+    <p>
+        Direct B2B sales should eventually become one of the most important
+        sources of revenue for the company.
+    </p>
+
+    <div class="highlight">
+
+        <strong>Do not sell "AI". Sell a business solution.</strong>
+
+        <br><br>
+
+        Instead of:
+
+        <br>
+
+        "We are an AI software company."
+
+        <br><br>
+
+        Say:
+
+        <br>
+
+        "We develop computer vision systems that automatically inspect products
+        using cameras and detect defects in real time."
+
+    </div>
+
+    <h3>Target Industries</h3>
+
+    <ul>
+        <li>Manufacturing</li>
+        <li>Automotive parts</li>
+        <li>Electronics</li>
+        <li>Food processing</li>
+        <li>Pharmaceuticals</li>
+        <li>Textile</li>
+        <li>Steel</li>
+        <li>Plastic manufacturing</li>
+        <li>Agriculture</li>
+        <li>Industrial automation</li>
+    </ul>
+
+</section>
+
+
+<!-- LINKEDIN -->
+
+<section>
+
+    <h2>6. LinkedIn Lead Generation</h2>
+
+    <p>
+        LinkedIn can be used to find decision makers inside companies.
+    </p>
+
+    <h3>People to Target</h3>
+
+    <ul>
+        <li>Founder</li>
+        <li>CEO</li>
+        <li>CTO</li>
+        <li>Head of Engineering</li>
+        <li>R&D Manager</li>
+        <li>Automation Manager</li>
+    </ul>
+
+    <h3>Example Search Terms</h3>
+
+    <div class="highlight">
+
+        "Manufacturing" + "AI"<br>
+        "Industrial Automation" + "Computer Vision"<br>
+        "Robotics" + "AI"<br>
+        "Drone" + "Computer Vision"<br>
+        "Factory Automation"<br>
+        "Quality Inspection"<br>
+        "Industrial IoT"
+
+    </div>
+
+</section>
+
+
+<!-- LEAD DATABASE -->
+
+<section>
+
+    <h2>7. Build a Lead Database</h2>
+
+    <p>
+        Create a spreadsheet or CRM containing every potential company.
+    </p>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Industry</th>
+                <th>Decision Maker</th>
+                <th>Problem</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Company A</td>
+                <td>Manufacturing</td>
+                <td>CTO</td>
+                <td>Inspection</td>
+                <td>New</td>
+            </tr>
+
+            <tr>
+                <td>Company B</td>
+                <td>Robotics</td>
+                <td>Founder</td>
+                <td>Robot Vision</td>
+                <td>Contacted</td>
+            </tr>
+
+            <tr>
+                <td>Company C</td>
+                <td>Drone</td>
+                <td>CEO</td>
+                <td>Object Tracking</td>
+                <td>Meeting</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+    <div class="highlight">
+        <strong>First target:</strong>
+        Build a list of 100 qualified companies instead of thousands
+        of random leads.
+    </div>
+
+</section>
+
+
+<!-- SALES PIPELINE -->
+
+<section>
+
+    <h2>8. Sales Pipeline</h2>
+
+    <div class="flow">
+
+        <div class="flow-box">NEW</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">CONTACTED</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">REPLIED</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">MEETING</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">PROPOSAL</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">NEGOTIATION</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">WON</div>
+
+    </div>
+
+    <p>
+        Every lead should have a status so that potential clients do not
+        disappear from the sales process.
+    </p>
+
+</section>
+
+
+<!-- OUTREACH -->
+
+<section>
+
+    <h2>9. Outreach Strategy</h2>
+
+    <p>
+        Avoid generic spam messages. Personalize your outreach around
+        a specific problem the company may have.
+    </p>
+
+    <div class="success">
+
+        <strong>Example:</strong>
+
+        <br><br>
+
+        I noticed your company works in automated manufacturing.
+        We develop computer vision systems for real-time product inspection
+        and defect detection. Our team has experience building detection
+        pipelines using YOLO and deploying AI systems on edge hardware.
+        I would be happy to show you a short demo and discuss whether
+        this could fit one of your inspection processes.
+
+    </div>
+
+</section>
+
+
+<!-- DEMOS -->
+
+<section>
+
+    <h2>10. Build Sales Demonstrations</h2>
+
+    <p>
+        For AI and Computer Vision, a short video demonstration can be
+        more convincing than a long company presentation.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Demo 1</h3>
+            <p>Industrial defect detection</p>
+        </div>
+
+        <div class="card">
+            <h3>Demo 2</h3>
+            <p>PPE safety monitoring</p>
+        </div>
+
+        <div class="card">
+            <h3>Demo 3</h3>
+            <p>AI RAG document assistant</p>
+        </div>
+
+        <div class="card">
+            <h3>Demo 4</h3>
+            <p>Drone object detection and tracking</p>
+        </div>
+
+        <div class="card">
+            <h3>Demo 5</h3>
+            <p>ROS2 robot vision simulation</p>
+        </div>
+
+    </div>
+
+    <h3>Example Industrial AI Pipeline</h3>
+
+    <div class="flow">
+
+        <div class="flow-box">Camera</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">YOLO</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Detection</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Decision Engine</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Dashboard</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Alert</div>
+
+    </div>
+
+</section>
+
+
+<!-- PARTNERSHIPS -->
+
+<section>
+
+    <h2>11. Partner With System Integrators</h2>
+
+    <p>
+        Industrial automation companies can become an excellent source
+        of recurring AI work.
+    </p>
+
+    <h3>Potential Partners</h3>
+
+    <ul>
+        <li>Industrial automation companies</li>
+        <li>PLC/SCADA integrators</li>
+        <li>Industrial camera suppliers</li>
+        <li>Robotics integrators</li>
+        <li>IoT companies</li>
+        <li>Drone companies</li>
+        <li>Hardware companies</li>
+    </ul>
+
+    <div class="flow">
+
+        <div class="flow-box">Factory</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Automation Integrator</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">InjectAI Nexus</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">AI Vision</div>
+
+    </div>
+
+    <div class="success">
+        You can become the AI/Computer Vision specialist for an existing
+        automation company instead of finding every factory yourself.
+    </div>
+
+</section>
+
+
+<!-- SMALL PROJECT -->
+
+<section>
+
+    <h2>12. Start With a Small Proof of Concept</h2>
+
+    <p>
+        For larger B2B clients, reduce their risk by offering a small
+        proof-of-concept before proposing a full production system.
+    </p>
+
+    <div class="flow">
+
+        <div class="flow-box">AI POC</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Production System</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Deployment</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Maintenance</div>
+
+    </div>
+
+    <h3>Example</h3>
+
+    <p>
+        Start with a small Computer Vision proof-of-concept, demonstrate
+        that the model can solve the client's problem, then move toward
+        production deployment.
+    </p>
+
+</section>
+
+
+<!-- RECURRING REVENUE -->
+
+<section>
+
+    <h2>13. Convert Projects Into Recurring Revenue</h2>
+
+    <div class="flow">
+
+        <div class="flow-box">POC</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Production</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Deployment</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Maintenance</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Retraining</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">New Features</div>
+
+    </div>
+
+    <h3>Potential Recurring Services</h3>
+
+    <ul>
+        <li>Server maintenance</li>
+        <li>AI model monitoring</li>
+        <li>Model retraining</li>
+        <li>Bug fixes</li>
+        <li>Cloud infrastructure</li>
+        <li>Security updates</li>
+        <li>Feature development</li>
+    </ul>
+
+</section>
+
+
+<!-- REFERRALS -->
+
+<section>
+
+    <h2>14. Referral Strategy</h2>
+
+    <p>
+        After successfully completing a project, ask satisfied clients
+        whether they know another company facing a similar problem.
+    </p>
+
+    <div class="success">
+        A satisfied client can become more valuable than a one-time project.
+        They can provide repeat work, referrals and testimonials.
+    </div>
+
+</section>
+
+
+<!-- DAILY PLAN -->
+
+<section>
+
+    <h2>15. Daily Client Acquisition Plan</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Daily Target</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Freelancer/Upwork proposals</td>
+                <td>5–10 highly relevant</td>
+            </tr>
+
+            <tr>
+                <td>New B2B companies researched</td>
+                <td>10</td>
+            </tr>
+
+            <tr>
+                <td>Decision makers contacted</td>
+                <td>5–10</td>
+            </tr>
+
+            <tr>
+                <td>LinkedIn activity</td>
+                <td>Daily</td>
+            </tr>
+
+            <tr>
+                <td>Technical content</td>
+                <td>2 posts/week</td>
+            </tr>
+
+            <tr>
+                <td>Portfolio/demo improvement</td>
+                <td>1/week</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<!-- METRICS -->
+
+<section>
+
+    <h2>16. Measure the Sales Funnel</h2>
+
+    <div class="cards">
+
+        <div class="metric">
+            <span class="metric-number">100</span>
+            Qualified Leads
+        </div>
+
+        <div class="metric">
+            <span class="metric-number">30</span>
+            Responses
+        </div>
+
+        <div class="metric">
+            <span class="metric-number">10</span>
+            Meetings
+        </div>
+
+        <div class="metric">
+            <span class="metric-number">5</span>
+            Proposals
+        </div>
+
+        <div class="metric">
+            <span class="metric-number">2</span>
+            Potential Clients
+        </div>
+
+    </div>
+
+    <p>
+        These numbers are examples, not guaranteed conversion rates.
+        Track your actual numbers and improve the process over time.
+    </p>
+
+    <h3>Track</h3>
+
+    <ul>
+        <li>Number of leads</li>
+        <li>Response rate</li>
+        <li>Meetings</li>
+        <li>Proposals</li>
+        <li>Conversion rate</li>
+        <li>Revenue per client</li>
+        <li>Customer acquisition cost</li>
+        <li>Repeat business</li>
+    </ul>
+
+</section>
+
+
+<!-- 30 DAY PLAN -->
+
+<section>
+
+    <h2>17. First 30-Day Client Acquisition Plan</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <h3>Week 1 — Prepare</h3>
+
+            <ul>
+                <li>Finalize company positioning.</li>
+                <li>Prepare company profile.</li>
+                <li>Prepare website.</li>
+                <li>Prepare LinkedIn company page.</li>
+                <li>Prepare proposal templates.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>Week 2 — Portfolio</h3>
+
+            <ul>
+                <li>Create industrial AI demo.</li>
+                <li>Create RAG demo.</li>
+                <li>Create robotics/drone demo.</li>
+                <li>Record short videos.</li>
+                <li>Create case studies.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>Week 3 — Outreach</h3>
+
+            <ul>
+                <li>Build first 50-company lead list.</li>
+                <li>Start LinkedIn outreach.</li>
+                <li>Start direct email outreach.</li>
+                <li>Submit freelance proposals.</li>
+            </ul>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <h3>Week 4 — Optimize</h3>
+
+            <ul>
+                <li>Review response rates.</li>
+                <li>Identify best-performing service.</li>
+                <li>Improve proposals.</li>
+                <li>Follow up with prospects.</li>
+                <li>Build the next 50-company lead list.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LONG TERM -->
+
+<section>
+
+    <h2>18. Long-Term Client Acquisition Model</h2>
+
+    <div class="flow">
+
+        <div class="flow-box">Freelance Projects</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Reviews</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Case Studies</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Direct Clients</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Repeat Clients</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Referrals</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Larger Projects</div>
+
+    </div>
+
+    <div class="highlight">
+
+        <strong>The ultimate objective:</strong>
+
+        <br><br>
+
+        Build a company where clients come from several sources instead
+        of depending entirely on Freelancer, Upwork or Fiverr.
+
+    </div>
+
+</section>
+
+
+<!-- CHECKLIST -->
+
+<section>
+
+    <h2>19. Client Acquisition Checklist</h2>
+
+    <ul class="checklist">
+
+        <li>Create professional company website</li>
+        <li>Create company email</li>
+        <li>Optimize Freelancer profile</li>
+        <li>Optimize Upwork profile</li>
+        <li>Create specialized Fiverr gigs</li>
+        <li>Create five strong technical demos</li>
+        <li>Record demo videos</li>
+        <li>Create company LinkedIn page</li>
+        <li>Optimize founder LinkedIn profile</li>
+        <li>Build 100-company lead database</li>
+        <li>Identify decision makers</li>
+        <li>Start direct outreach</li>
+        <li>Contact system integrators</li>
+        <li>Submit targeted freelance proposals</li>
+        <li>Follow up with prospects</li>
+        <li>Track sales pipeline</li>
+        <li>Track customer acquisition cost</li>
+        <li>Ask satisfied clients for reviews</li>
+        <li>Ask for referrals</li>
+        <li>Offer maintenance contracts</li>
+
+    </ul>
+
+</section>
+
+
+<!-- FINAL STRATEGY -->
+
+<section>
+
+    <h2>20. Final Strategy for InjectAI Nexus</h2>
+
+    <div class="success">
+
+        <h3>Primary Services</h3>
+
+        <p>
+            <strong>
+                AI Engineering • Computer Vision • Robotics • Drone AI • Automation
+            </strong>
+        </p>
+
+    </div>
+
+    <h3>Primary Client Channels</h3>
+
+    <ol>
+        <li>Freelancer.com</li>
+        <li>Upwork</li>
+        <li>LinkedIn</li>
+        <li>Direct B2B outreach</li>
+        <li>System integrator partnerships</li>
+        <li>Fiverr</li>
+        <li>Referrals</li>
+    </ol>
+
+    <div class="warning">
+
+        <strong>
+            Do not try to sell everything to everyone.
+        </strong>
+
+        <br><br>
+
+        Start with specific business problems where your technical expertise
+        gives you an advantage. Industrial Computer Vision is a particularly
+        strong starting niche because the value can be demonstrated visually
+        and connected directly to business outcomes.
+
+    </div>
+
+    <div class="highlight">
+
+        <strong>Business growth formula:</strong>
+
+        <br><br>
+
+        Find a problem → Build a demo → Contact the right company →
+        Get a meeting → Sell a small POC → Deliver successfully →
+        Convert to production → Offer maintenance → Get referral
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        InjectAI Nexus
+    </p>
+
+    <p>
+        AI Engineering • Computer Vision • Robotics • Automation
+    </p>
+
+</footer>
+```
+
+</div>
+
+</body>
+</html>
