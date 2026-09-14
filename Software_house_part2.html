@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software House Investment & Client Acquisition Plan</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f4f6f8;
+        color: #1f2937;
+        line-height: 1.6;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 20px 60px;
+    }
+
+    header {
+        background: linear-gradient(135deg, #111827, #2563eb);
+        color: white;
+        padding: 55px 35px;
+        border-radius: 18px;
+        margin-bottom: 30px;
+    }
+
+    header h1 {
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+
+    header p {
+        font-size: 19px;
+        max-width: 800px;
+        color: #e5e7eb;
+    }
+
+    .badge {
+        display: inline-block;
+        background: rgba(255,255,255,0.15);
+        padding: 7px 14px;
+        border-radius: 30px;
+        margin-bottom: 18px;
+        font-size: 14px;
+    }
+
+    section {
+        background: white;
+        padding: 30px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #111827;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 20px 0 10px;
+        color: #1d4ed8;
+    }
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    ul {
+        margin-left: 22px;
+        margin-bottom: 15px;
+    }
+
+    li {
+        margin-bottom: 7px;
+    }
+
+    .highlight {
+        background: #eff6ff;
+        border-left: 5px solid #2563eb;
+        padding: 18px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .warning {
+        background: #fff7ed;
+        border-left: 5px solid #f97316;
+        padding: 18px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .success {
+        background: #f0fdf4;
+        border-left: 5px solid #16a34a;
+        padding: 18px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 13px 14px;
+        border-bottom: 1px solid #e5e7eb;
+        text-align: left;
+    }
+
+    th {
+        background: #f3f4f6;
+        font-weight: bold;
+    }
+
+    tr:hover {
+        background: #f9fafb;
+    }
+
+    .number {
+        font-size: 30px;
+        font-weight: bold;
+        color: #2563eb;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 18px;
+        margin-top: 20px;
+    }
+
+    .card {
+        padding: 22px;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        background: #fafafa;
+    }
+
+    .card h3 {
+        margin-top: 0;
+    }
+
+    .card .price {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 10px 0;
+        color: #111827;
+    }
+
+    .timeline {
+        border-left: 4px solid #2563eb;
+        padding-left: 25px;
+        margin-left: 8px;
+    }
+
+    .timeline-item {
+        margin-bottom: 28px;
+        position: relative;
+    }
+
+    .timeline-item::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background: #2563eb;
+        border-radius: 50%;
+        position: absolute;
+        left: -34px;
+        top: 7px;
+    }
+
+    .timeline-item h3 {
+        margin-top: 0;
+    }
+
+    .flow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin: 25px 0;
+    }
+
+    .flow-box {
+        padding: 12px 18px;
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    .arrow {
+        font-size: 22px;
+        color: #6b7280;
+    }
+
+    .checklist {
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .checklist li {
+        padding: 9px 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .checklist li::before {
+        content: "☐";
+        margin-right: 10px;
+        color: #2563eb;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        color: #6b7280;
+        padding: 30px 10px;
+    }
+
+    @media (max-width: 700px) {
+        header h1 {
+            font-size: 30px;
+        }
+
+        header {
+            padding: 35px 25px;
+        }
+
+        section {
+            padding: 22px;
+        }
+
+        table {
+            font-size: 14px;
+        }
+
+        th, td {
+            padding: 9px;
+        }
+    }
+
+    @media print {
+        body {
+            background: white;
+        }
+
+        section, header {
+            box-shadow: none;
+            break-inside: avoid;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="container">
+
+```
+<header>
+    <div class="badge">Business Launch Plan</div>
+
+    <h1>Software House Investment & Client Acquisition</h1>
+
+    <p>
+        A practical starting plan for building a small AI, Computer Vision,
+        Robotics, Automation and Software Development company.
+    </p>
+</header>
+
+
+<!-- EXECUTIVE SUMMARY -->
+<section>
+    <h2>1. Executive Summary</h2>
+
+    <div class="highlight">
+        <strong>Recommended starting investment:</strong>
+        approximately <strong>$200–$400 per month</strong>
+        for the first 2–3 months.
+    </div>
+
+    <p>
+        A new software house does not need a large office, expensive servers,
+        or a large advertising budget at the beginning.
+    </p>
+
+    <p>
+        The initial priority should be client acquisition, portfolio development,
+        professional business infrastructure and reliable development equipment.
+    </p>
+
+    <div class="success">
+        <strong>Core principle:</strong>
+        Start lean, acquire clients, generate revenue, then reinvest the revenue
+        into the company.
+    </div>
+</section>
+
+
+<!-- MONTHLY BUDGET -->
+<section>
+    <h2>2. Estimated Monthly Investment</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Lean / Month</th>
+                <th>Comfortable / Month</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Freelancer.com</td>
+                <td>$20–50</td>
+                <td>$50–100</td>
+            </tr>
+
+            <tr>
+                <td>Upwork</td>
+                <td>$20–50</td>
+                <td>$50–100</td>
+            </tr>
+
+            <tr>
+                <td>Fiverr</td>
+                <td>$0–30</td>
+                <td>$30–100</td>
+            </tr>
+
+            <tr>
+                <td>PeoplePerHour</td>
+                <td>$0–30</td>
+                <td>$20–50</td>
+            </tr>
+
+            <tr>
+                <td>Guru</td>
+                <td>$0–20</td>
+                <td>$20–50</td>
+            </tr>
+
+            <tr>
+                <td>Domain & Email</td>
+                <td>$10–30</td>
+                <td>$20–50</td>
+            </tr>
+
+            <tr>
+                <td>Website Hosting</td>
+                <td>$5–20</td>
+                <td>$20–50</td>
+            </tr>
+
+            <tr>
+                <td>Cloud / VPS</td>
+                <td>$20–50</td>
+                <td>$50–150</td>
+            </tr>
+
+            <tr>
+                <td>AI / API Services</td>
+                <td>$20–50</td>
+                <td>$50–150</td>
+            </tr>
+
+            <tr>
+                <td>Marketing</td>
+                <td>$50–150</td>
+                <td>$200–500</td>
+            </tr>
+
+            <tr>
+                <td>Miscellaneous</td>
+                <td>$20–50</td>
+                <td>$50–100</td>
+            </tr>
+
+            <tr>
+                <th>Total</th>
+                <th>~$165–480</th>
+                <th>~$540–1,350</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="highlight">
+        You do not need to spend the maximum amount.
+        Start around <strong>$200–$400/month</strong> and increase spending
+        only when the business begins generating predictable revenue.
+    </div>
+</section>
+
+
+<!-- PLATFORM STRATEGY -->
+<section>
+    <h2>3. Client Acquisition Platforms</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Freelancer.com</h3>
+            <p class="price">$20–100/mo</p>
+            <p>
+                Focus on highly relevant AI, Computer Vision, Robotics,
+                Python and automation projects.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Upwork</h3>
+            <p class="price">$20–100/mo</p>
+            <p>
+                Use connects strategically and submit proposals only
+                to projects with strong technical fit.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Fiverr</h3>
+            <p class="price">$0–100/mo</p>
+            <p>
+                Build specialized gigs around specific services instead
+                of offering generic software development.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>PeoplePerHour</h3>
+            <p class="price">$0–50/mo</p>
+            <p>
+                Treat this as a secondary source and measure whether
+                it produces qualified leads.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Guru</h3>
+            <p class="price">$0–50/mo</p>
+            <p>
+                Use as an additional lead source without making it
+                a major marketing expense.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>LinkedIn</h3>
+            <p class="price">Low initial cost</p>
+            <p>
+                Build long-term relationships with companies, founders,
+                CTOs and industrial businesses.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PLATFORM PRIORITY -->
+<section>
+    <h2>4. Recommended Platform Priority</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Priority</th>
+                <th>Platform</th>
+                <th>Purpose</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Freelancer.com</td>
+                <td>Immediate project acquisition</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Upwork</td>
+                <td>Higher-value freelance projects</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>LinkedIn</td>
+                <td>Direct B2B clients</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Fiverr</td>
+                <td>Packaged AI services</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>PeoplePerHour</td>
+                <td>Additional lead source</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Guru</td>
+                <td>Additional lead source</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!-- LINKEDIN -->
+<section>
+    <h2>5. LinkedIn Strategy</h2>
+
+    <p>
+        LinkedIn should become increasingly important as the company moves
+        from freelance platforms toward direct business clients.
+    </p>
+
+    <div class="flow">
+        <div class="flow-box">LinkedIn Profile</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Technical Content</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Case Studies</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Potential Client</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Meeting</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Project</div>
+    </div>
+
+    <h3>Target Companies</h3>
+
+    <ul>
+        <li>Manufacturing companies</li>
+        <li>Robotics companies</li>
+        <li>Drone companies</li>
+        <li>AI startups</li>
+        <li>Industrial automation companies</li>
+        <li>System integrators</li>
+    </ul>
+</section>
+
+
+<!-- SERVICES -->
+<section>
+    <h2>6. Services to Sell</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Industrial AI Vision</h3>
+            <ul>
+                <li>Defect detection</li>
+                <li>Object detection</li>
+                <li>Tracking</li>
+                <li>PPE monitoring</li>
+                <li>Quality inspection</li>
+                <li>Video analytics</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Generative AI</h3>
+            <ul>
+                <li>RAG systems</li>
+                <li>AI chatbots</li>
+                <li>AI agents</li>
+                <li>Document AI</li>
+                <li>Voice AI</li>
+                <li>LLM applications</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Robotics & Drone AI</h3>
+            <ul>
+                <li>ROS2</li>
+                <li>PX4</li>
+                <li>ArduPilot</li>
+                <li>MAVLink</li>
+                <li>Computer vision</li>
+                <li>Simulation</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Business Automation</h3>
+            <ul>
+                <li>n8n workflows</li>
+                <li>API automation</li>
+                <li>CRM automation</li>
+                <li>Email automation</li>
+                <li>AI workflows</li>
+                <li>Database automation</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PORTFOLIO -->
+<section>
+    <h2>7. Portfolio Investment</h2>
+
+    <p>
+        Portfolio quality is more important than spending a large amount
+        of money on advertising.
+    </p>
+
+    <h3>Recommended Flagship Projects</h3>
+
+    <ol>
+        <li>Industrial AI inspection system</li>
+        <li>AI RAG document assistant</li>
+        <li>Drone AI detection and tracking</li>
+        <li>AI business automation workflow</li>
+        <li>ROS2 robotics simulation</li>
+    </ol>
+
+    <div class="highlight">
+        Each case study should show:
+        <strong>Problem → Solution → Architecture → Technology → Demo → Result</strong>
+    </div>
+</section>
+
+
+<!-- BUDGET -->
+<section>
+    <h2>8. Example First $300 Marketing Budget</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Purpose</th>
+                <th>Suggested Amount</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Freelancer / Upwork</td>
+                <td>$80</td>
+            </tr>
+
+            <tr>
+                <td>Domain / Email / Website</td>
+                <td>$30</td>
+            </tr>
+
+            <tr>
+                <td>AI / API / Cloud</td>
+                <td>$30</td>
+            </tr>
+
+            <tr>
+                <td>Marketing / Content</td>
+                <td>$50</td>
+            </tr>
+
+            <tr>
+                <td>Platform / Bid Reserve</td>
+                <td>$50</td>
+            </tr>
+
+            <tr>
+                <td>Miscellaneous</td>
+                <td>$60</td>
+            </tr>
+
+            <tr>
+                <th>Total</th>
+                <th>$300</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="warning">
+        Do not spend the entire budget just because it is available.
+        Spend more only when you know which channel is producing qualified clients.
+    </div>
+</section>
+
+
+<!-- SALES FUNNEL -->
+<section>
+    <h2>9. Sales Funnel</h2>
+
+    <div class="flow">
+        <div class="flow-box">100 Leads</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">30 Responses</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">10 Meetings</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">5 Proposals</div>
+        <div class="arrow">↓</div>
+        <div class="flow-box">2 Clients</div>
+    </div>
+
+    <p>
+        These numbers are illustrative. Your actual conversion rate will depend
+        on your service, pricing, portfolio and target market.
+    </p>
+
+    <div class="success">
+        Track the entire funnel rather than simply counting how many proposals
+        you submitted.
+    </div>
+</section>
+
+
+<!-- CAC -->
+<section>
+    <h2>10. Customer Acquisition Cost</h2>
+
+    <p>
+        Track how much you spend to acquire each client.
+    </p>
+
+    <div class="highlight">
+        <strong>Example:</strong><br><br>
+
+        Marketing and platform spending = $300<br>
+        Clients acquired = 2<br><br>
+
+        <span class="number">$150</span> customer acquisition cost per client.
+    </div>
+
+    <p>
+        If those two clients generate several thousand dollars in revenue,
+        the acquisition cost is reasonable.
+    </p>
+</section>
+
+
+<!-- REVENUE STAGES -->
+<section>
+    <h2>11. Investment by Revenue Stage</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Monthly Revenue</th>
+                <th>Recommended Marketing Investment</th>
+                <th>Focus</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>$0</td>
+                <td>$100–300</td>
+                <td>Find winning service</td>
+            </tr>
+
+            <tr>
+                <td>$1,000–3,000</td>
+                <td>$200–500</td>
+                <td>Increase successful channels</td>
+            </tr>
+
+            <tr>
+                <td>$3,000–10,000</td>
+                <td>$400–1,000</td>
+                <td>Sales and business development</td>
+            </tr>
+
+            <tr>
+                <td>$10,000+</td>
+                <td>$1,000+</td>
+                <td>Scale sales and marketing</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+<!-- INFRASTRUCTURE -->
+<section>
+    <h2>12. Infrastructure</h2>
+
+    <p>
+        A new software house does not need expensive physical infrastructure.
+        Start with professional digital infrastructure.
+    </p>
+
+    <h3>Essential</h3>
+
+    <ul>
+        <li>Professional domain</li>
+        <li>Company email</li>
+        <li>Website</li>
+        <li>GitHub organization</li>
+        <li>Cloud storage</li>
+        <li>Project management</li>
+        <li>Reliable internet</li>
+        <li>Developer computers</li>
+        <li>Backup system</li>
+    </ul>
+
+    <h3>Not Required Initially</h3>
+
+    <ul>
+        <li>Large office</li>
+        <li>Dedicated server room</li>
+        <li>Expensive physical GPU cluster</li>
+        <li>Large IT department</li>
+        <li>Large full-time development team</li>
+    </ul>
+
+    <div class="highlight">
+        For AI workloads, use cloud GPU resources when required instead of
+        purchasing an expensive GPU server before the business needs it.
+    </div>
+</section>
+
+
+<!-- CLIENT ACQUISITION MODEL -->
+<section>
+    <h2>13. Complete Client Acquisition Model</h2>
+
+    <div class="flow">
+        <div class="flow-box">Freelancer</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Upwork</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">LinkedIn</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Website</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Direct Clients</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Repeat Clients</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Referrals</div>
+    </div>
+
+    <p>
+        The long-term goal is to reduce dependence on freelance platforms
+        and increase direct clients, repeat business and referrals.
+    </p>
+</section>
+
+
+<!-- 90 DAY PLAN -->
+<section>
+    <h2>14. First 90 Days</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>Days 1–7 — Foundation</h3>
+
+            <ul>
+                <li>Finalize company name</li>
+                <li>Buy domain</li>
+                <li>Set up company email</li>
+                <li>Create GitHub organization</li>
+                <li>Define services</li>
+                <li>Define team responsibilities</li>
+            </ul>
+        </div>
+
+
+        <div class="timeline-item">
+            <h3>Days 8–20 — Website</h3>
+
+            <ul>
+                <li>Build company website</li>
+                <li>Create service pages</li>
+                <li>Create portfolio section</li>
+                <li>Create company profile</li>
+            </ul>
+        </div>
+
+
+        <div class="timeline-item">
+            <h3>Days 15–30 — Portfolio</h3>
+
+            <ul>
+                <li>Industrial vision demo</li>
+                <li>RAG assistant</li>
+                <li>Drone AI demo</li>
+                <li>Automation demo</li>
+                <li>Robotics demo</li>
+            </ul>
+        </div>
+
+
+        <div class="timeline-item">
+            <h3>Days 30–45 — Sales</h3>
+
+            <ul>
+                <li>Freelancer proposals</li>
+                <li>Upwork proposals</li>
+                <li>LinkedIn outreach</li>
+                <li>Direct company outreach</li>
+            </ul>
+        </div>
+
+
+        <div class="timeline-item">
+            <h3>Days 45–60 — Optimize</h3>
+
+            <ul>
+                <li>Track leads</li>
+                <li>Track responses</li>
+                <li>Track meetings</li>
+                <li>Track proposals</li>
+                <li>Track conversions</li>
+            </ul>
+        </div>
+
+
+        <div class="timeline-item">
+            <h3>Days 60–90 — Systemize</h3>
+
+            <ul>
+                <li>Proposal template</li>
+                <li>Quotation template</li>
+                <li>SRS template</li>
+                <li>Contract template</li>
+                <li>QA checklist</li>
+                <li>Deployment checklist</li>
+                <li>Client onboarding process</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CHECKLIST -->
+<section>
+    <h2>15. Software House Launch Checklist</h2>
+
+    <ul class="checklist">
+        <li>Finalize company name</li>
+        <li>Buy domain</li>
+        <li>Create company email</li>
+        <li>Create GitHub organization</li>
+        <li>Define four core services</li>
+        <li>Define target industries</li>
+        <li>Define team responsibilities</li>
+        <li>Create company profile</li>
+        <li>Build website</li>
+        <li>Create five case studies</li>
+        <li>Create proposal template</li>
+        <li>Create quotation template</li>
+        <li>Create SRS template</li>
+        <li>Create NDA and contract templates</li>
+        <li>Create project-management workflow</li>
+        <li>Create sales CRM</li>
+        <li>Create LinkedIn company page</li>
+        <li>Start outbound sales</li>
+        <li>Continue Freelancer/Upwork</li>
+        <li>Acquire first company project</li>
+        <li>Get client testimonial</li>
+        <li>Offer maintenance/support</li>
+        <li>Reinvest revenue</li>
+    </ul>
+</section>
+
+
+<!-- FINAL STRATEGY -->
+<section>
+    <h2>16. Recommended Strategy</h2>
+
+    <div class="success">
+        <h3>Start Lean</h3>
+
+        <p>
+            Begin with approximately <strong>$200–$400/month</strong>
+            rather than making a large upfront investment.
+        </p>
+    </div>
+
+    <h3>Primary Focus</h3>
+
+    <ul>
+        <li>Freelancer.com</li>
+        <li>Upwork</li>
+        <li>LinkedIn</li>
+        <li>Fiverr</li>
+        <li>Direct B2B outreach</li>
+    </ul>
+
+    <h3>Core Positioning</h3>
+
+    <p>
+        <strong>AI Engineering • Computer Vision • Robotics • Automation</strong>
+    </p>
+
+    <h3>Business Growth Model</h3>
+
+    <div class="flow">
+        <div class="flow-box">Freelance Projects</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Reviews</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Case Studies</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Direct Clients</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Recurring Revenue</div>
+        <div class="arrow">→</div>
+        <div class="flow-box">Team Growth</div>
+    </div>
+
+    <div class="warning">
+        <strong>Do not spend heavily just to look like a software house.</strong>
+        Invest in client acquisition, portfolio quality and delivery systems.
+        Once revenue becomes predictable, reinvest that revenue into people,
+        infrastructure and marketing.
+    </div>
+</section>
+
+
+<footer>
+    <p>
+        Software House Investment & Client Acquisition Plan
+    </p>
+
+    <p>
+        AI Engineering • Computer Vision • Robotics • Automation
+    </p>
+</footer>
+```
+
+</div>
+
+</body>
+</html>
