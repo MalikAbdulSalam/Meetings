@@ -1,7 +1,7 @@
-[Software House : Startup Part 1 ](
+[Software House : Startup Guide ](
 https://malikabdulsalam.github.io/Meetings/Software_house_part1.html)
 
-[Software House : Startup Part 2 ](
+[Software House : Software House Investment & Client Acquisition ](
 https://malikabdulsalam.github.io/Meetings/Software_house_part2.html)
 
 [Software House : Client Hunting ](
